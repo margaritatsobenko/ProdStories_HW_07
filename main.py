@@ -10,7 +10,8 @@ model = Handler()
 
 
 def bot_run():
-    bot = telebot.TeleBot("2141039771:AAE0KiYLEgY-Udlh4WefiWud-fMe9FONvok")
+    bot_name = ""
+    bot = telebot.TeleBot(bot_name)
 
     @bot.message_handler(commands=['start'])
     def start_message(message):
